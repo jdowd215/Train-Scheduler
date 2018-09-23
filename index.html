@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Scheduler</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- Firebase Reference -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="display-4">ScotRail</h1>
+        <h2 class="lead">Trains of Scotland</h2>
+    </div>
+
+    <div class="card-body">
+        <table class="table">
+            <thead>
+                <p>Current Train Schedule</p>
+                <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency (min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <th scope="row">Edinburgh</th>
+                <td>Dundee</td>
+                <td>15</td>
+                <td>09:10 AM</td>
+                <td></td>
+                </tr>
+                <tr>
+                <th scope="row">Glasgow</th>
+                <td>Aberdeen</td>
+                <td>25</td>
+                <td>10:30 AM</td>
+                <td></td>
+                </tr>
+                <tr>
+                <th scope="row">Perth</th>
+                <td>Inverness</td>
+                <td>90</td>
+                <td>02:50 PM</td>
+                <td></td>
+                </tr>
+            </tbody>
+        </table> 
+    </div>
+    <br>
+    <div class="card-body">
+
+        <!-- Here we create an HTML Form for handling the inputs-->
+        <form role="form">
+        <!-- Here we create the text box for capturing the employee name-->
+            <div class="form-group">
+            <label for="name">Add Employee Name</label>
+            <input type="text" class="form-control" id="employee-name">
+            </div>
+              
+        <!-- Here we capture the Role Parameter-->
+            <div class="form-group">
+            <label for="role">Add Train</label>
+            <input type="text" class="form-control" id="train-name">
+            </div>
+              
+        <!-- Here we capture the Train Name Parameter -->
+            <div class="form-group">
+            <label for="train">Train Name</label>
+            <input type="text" class="form-control" id="train-name">
+            </div>
+              
+        <!-- Here we capture the Destination Parameter -->
+            <div class="form-group">
+            <label for="place">Destination</label>
+            <input type="text" class="form-control" id="destination">
+            </div>
+
+        <!-- Here we capture the First Train Parameter -->
+            <div class="form-group">
+            <label for="time">First Train Time (HH:mm - military time)</label>
+            <input type="text" class="form-control" id="first-train">
+            </div>   
+              
+        <!-- Here we capture the Frequency Parameter -->
+            <div class="form-group">
+            <label for="frequency">Frequency (min)</label>
+            <input type="text" class="form-control" id="next-train">
+            </div>
+
+        <!-- Here we have our final submit button -->
+            <button type="submit" class="btn btn-default" id="run-search">
+            <i class="fa fa-search"></i> Submit</button>
+              
+        </form>
+
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  
+    <script src="assets/javascript/app.js"></script>  
+
+</body>
+
+</html>

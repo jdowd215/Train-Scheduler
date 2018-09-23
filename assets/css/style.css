@@ -1,0 +1,34 @@
+body {
+    background-image: 
+    url(../images/Scotland.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;
+
+}
+
+.jumbotron {
+    margin: 80px;
+    opacity: 0.8;
+
+}
+
+.card-body {
+    background: white;
+    opacity: 0.8;
+    margin: 80px;
+    border-radius: 5px;
+}
+
+.table {
+    background: white;
+    opacity: 0.8;
+
+}
+
+.form {
+    background: white;
+    opacity: 0.8;
+
+}
