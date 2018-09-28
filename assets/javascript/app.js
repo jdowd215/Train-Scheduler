@@ -28,6 +28,15 @@
   var nextArrival;
   var trainCount = 0;
 
+  var ref = database.ref();
+
+  ref.on("value", function(snapshot) {
+    console.log(snapshot.val());
+    
+  }, function (errorObject) {
+    console.log("The read failed: " + errorObject.code);
+  });
+
   //button for adding train data
   $("#add-train-btn").on("click", function(event) {
         event.preventDefault();
